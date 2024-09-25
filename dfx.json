@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Two_backend": {
+      "main": "src/Two_backend/main.mo",
+      "type": "motoko"
+    },
+    "Two_frontend": {
+      "dependencies": [
+        "Two_backend"
+      ],
+      "source": [
+        "src/Two_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Two_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
